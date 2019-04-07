@@ -1,6 +1,6 @@
 ﻿namespace Eigenvalues
 {
-    partial class Form1
+    partial class Eigenvalues
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 163);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(331, 275);
+            this.dataGridView1.Size = new System.Drawing.Size(478, 275);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -107,7 +107,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(210, 38);
+            this.button1.Location = new System.Drawing.Point(264, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 67);
             this.button1.TabIndex = 5;
@@ -135,7 +135,7 @@
             // labelMax
             // 
             this.labelMax.AutoSize = true;
-            this.labelMax.Location = new System.Drawing.Point(12, 133);
+            this.labelMax.Location = new System.Drawing.Point(37, 134);
             this.labelMax.Name = "labelMax";
             this.labelMax.Size = new System.Drawing.Size(0, 13);
             this.labelMax.TabIndex = 8;
@@ -143,7 +143,7 @@
             // labelMin
             // 
             this.labelMin.AutoSize = true;
-            this.labelMin.Location = new System.Drawing.Point(179, 133);
+            this.labelMin.Location = new System.Drawing.Point(261, 134);
             this.labelMin.Name = "labelMin";
             this.labelMin.Size = new System.Drawing.Size(0, 13);
             this.labelMin.TabIndex = 9;
@@ -152,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 450);
+            this.ClientSize = new System.Drawing.Size(502, 450);
             this.Controls.Add(this.labelMin);
             this.Controls.Add(this.labelMax);
             this.Controls.Add(this.label2);

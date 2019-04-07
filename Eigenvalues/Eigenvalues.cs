@@ -10,12 +10,12 @@ using System.Windows.Forms;
 using MathNet.Numerics.LinearAlgebra;
 namespace Eigenvalues
 {
-    public partial class Form1 : Form
+    public partial class Eigenvalues : Form
     {
         private Matrix<double> A,B,E;
         private Vector<double> X, Xp,e;
         private double eps;
-        public Form1()
+        public Eigenvalues()
         {
             InitializeComponent();
             InitializeDataGridView(2, 2);
@@ -66,6 +66,8 @@ namespace Eigenvalues
             InitializeDataGridView((int)numericUpDownRows.Value, (int)numericUpDownColumns.Value);
         }
 
+        
+
         private void InitMatrics()
         {
             int rows = dataGridView1.RowCount - 2,
@@ -114,15 +116,16 @@ namespace Eigenvalues
         private void Execute()
         {
             InitMatrics();
-            double l_B, l_A = MaxEigenvalue(A, Xp, ref X, ref e);
+            double l_B=0, l_A = MaxEigenvalue(A, Xp, ref X, ref e);
             B = l_A * E - A;
             if (A.IsSymmetric())
             {
                 l_B = MaxEigenvalue(B, Xp, ref X, ref e);
-                labelMin.Text = "Min eigenvalue : " + (l_A - l_B);
+                
+                   labelMin.Text = "Min eigenvalue : " + (l_A - l_B);
             }
-
-            labelMax.Text = "Max eigenvalue : " + l_A;
+           
+                labelMax.Text = "Max eigenvalue : " + l_A;
         } 
 
 
